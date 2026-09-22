@@ -1,9 +1,10 @@
-var guestList = ["Kofi","Yusif","Quansah"]
+var guestList = ["kofi","yusif","quansah"]
 
 var guestName = prompt("Enter name here")
 
-//adds a geust to guest list
-guestList.includes(guestName)
-
-alert(guestName + " added to list.")
-
+if (guestList.includes(guestName)) {
+  alert(guestName + " is on the list.");
+} else {
+  alert(guestName + " is not on the list.");
+  
+}
